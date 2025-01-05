@@ -11,6 +11,7 @@ import { ViteSSG } from 'vite-ssg'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
+import { componentList } from './components/index'
 
 import '~/styles/index.scss'
 
@@ -42,5 +43,9 @@ export const createApp = ViteSSG(
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))
       .forEach(i => i.install?.(ctx))
     // ctx.app.use(Previewer)
+
+    for (const component of componentList) {
+      ctx.app.component(component.name, component)
+    }
   },
 )

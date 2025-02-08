@@ -94,6 +94,9 @@ function resetForm(formEl: FormInstance | undefined) {
 
 <style scoped>
 .search-class {
+  border: 1px solid #ebeef5;
   padding: 20px;
+  width: 500px;
+  height: auto;
 }
 </style>

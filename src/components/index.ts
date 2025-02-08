@@ -1,6 +1,6 @@
 import { generateRandomString } from '~/util/Random-util'
 import Search from '../components/Search/index.vue'
-import NumberFormItem from '../pages/right-pages/index.vue'
+import ComponentSelection from '../pages/components-form/componentSelection.vue'
 
 export const componentList = [
   {
@@ -11,18 +11,24 @@ export const componentList = [
       height: '100px',
     },
     tools: {
+      moduleKey: generateRandomString(),
       default: [
         {
-          formName: ['width', 'height'],
-          formType: NumberFormItem,
-          formKey: generateRandomString(),
-          formLabel: '基础属性',
+          formName: ['name', 'width', 'height', 'titleContent', 'titleLayout', 'mouseEvent', 'backgroundColor', 'backgroundImage', 'dimension', 'position', 'distribution', 'rounded'],
+          formType: ComponentSelection,
           props: {
 
           },
         },
+        // {
+        //   // 拓展属性
+        // },
       ],
-      my: [],
+      my: [
+        {
+          formLabel: '组件设置',
+        },
+      ],
     },
   },
 ]

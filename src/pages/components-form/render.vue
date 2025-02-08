@@ -4,7 +4,7 @@ import { defineProps, onMounted, reactive, ref, watch } from 'vue'
 const { toolsList } = defineProps({
   toolsList: {
     type: Array,
-    default: [],
+    default: () => [], // 修改为返回空数组的函数
   },
 })
 
@@ -13,7 +13,7 @@ const test = ref()
 watch(
   test,
   () => {
-    console.log('test:', test)
+    // console.log('test:', test)
   },
   { deep: true },
 )
@@ -23,7 +23,7 @@ function updateVal(res) {
 }
 
 onMounted(() => {
-  console.log('toolsList:', toolsList)
+  // console.log('toolsList:', toolsList)
 })
 </script>
 
@@ -32,7 +32,8 @@ onMounted(() => {
     <component
       :is="toolItem.formType"
       v-for="toolItem in toolsList"
-      :key="toolItem.formKey"
+      :key="toolItem.key"
+      :component-argument="toolItem"
       @change="updateVal"
     />
   </div>

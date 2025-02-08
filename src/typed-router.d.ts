@@ -19,7 +19,13 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
-    '/right-pages/': RouteRecordInfo<'/right-pages/', '/right-pages', Record<never, never>, Record<never, never>>,
-    '/right-pages/render': RouteRecordInfo<'/right-pages/render', '/right-pages/render', Record<never, never>, Record<never, never>>,
+    '/components-form/componentSelection': RouteRecordInfo<'/components-form/componentSelection', '/components-form/componentSelection', Record<never, never>, Record<never, never>>,
+    '/components-form/myColorPicker': RouteRecordInfo<'/components-form/myColorPicker', '/components-form/myColorPicker', Record<never, never>, Record<never, never>>,
+    '/components-form/myInput': RouteRecordInfo<'/components-form/myInput', '/components-form/myInput', Record<never, never>, Record<never, never>>,
+    '/components-form/myInputNumber': RouteRecordInfo<'/components-form/myInputNumber', '/components-form/myInputNumber', Record<never, never>, Record<never, never>>,
+    '/components-form/myPositionInput': RouteRecordInfo<'/components-form/myPositionInput', '/components-form/myPositionInput', Record<never, never>, Record<never, never>>,
+    '/components-form/mySelect': RouteRecordInfo<'/components-form/mySelect', '/components-form/mySelect', Record<never, never>, Record<never, never>>,
+    '/components-form/mySwitch': RouteRecordInfo<'/components-form/mySwitch', '/components-form/mySwitch', Record<never, never>, Record<never, never>>,
+    '/components-form/render': RouteRecordInfo<'/components-form/render', '/components-form/render', Record<never, never>, Record<never, never>>,
   }
 }

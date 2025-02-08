@@ -1,0 +1,115 @@
+export const RenderConfigList = [
+  {
+    key: 'name',
+    name: '组件名称',
+    type: 'input',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'width',
+    name: '宽(栅格24)',
+    type: 'inputNumber',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'height',
+    name: '高(1=10px)',
+    type: 'inputNumber',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'titleContent',
+    name: '标题内容',
+    type: 'input',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'titleLayout',
+    name: '布局标题',
+    type: 'switch',
+    default: true,
+    value: '',
+  },
+  {
+    key: 'mouseEvent',
+    name: '鼠标事件',
+    type: 'switch',
+    default: true,
+    value: '',
+  },
+  {
+    key: 'backgroundColor',
+    name: '背景颜色',
+    type: 'ColorPicker',
+    default: 'rgba(19, 206, 102, 0.8)',
+    value: '',
+  },
+  {
+    key: 'backgroundImage',
+    name: '背景图片',
+    type: 'image',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'dimension',
+    name: '图片尺寸',
+    type: 'input',
+    default: '',
+    value: '',
+  },
+  {
+    key: 'position',
+    name: '图片位置',
+    type: 'positionInput',
+    default: {
+      x: 'left',
+      y: 'top',
+    },
+    value: '',
+  },
+  {
+    key: 'distribution',
+    name: '图片分布',
+    type: 'select',
+    default: 'repeat',
+    value: '',
+    option: [
+      {
+        value: 'repeat',
+        label: '默认',
+      },
+      {
+        value: 'repeat-x',
+        label: '横向上平铺',
+      },
+      {
+        value: 'repeat-y',
+        label: '纵向上平铺',
+      },
+      {
+        value: 'no-repeat',
+        label: '不平铺',
+      },
+      {
+        value: 'round',
+        label: '自动缩放',
+      },
+      {
+        value: 'space',
+        label: '相同的间距平铺且填满整个容器',
+      },
+    ],
+  },
+  {
+    key: 'rounded',
+    name: '圆角',
+    type: 'input',
+    repeat: '5px',
+    value: '',
+  },
+]
